@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+.box{
+  height: 68vh;
+  width: 100vw;
+  border: solid 1px black;
+}
+
+.blog{
+  background-image: url(assets/images/bg/bg14.jpg);
+}
+
+.clientImg{
+  margin-top: 20px;
+}
+
+.influencer{
+  width: 100vw;
+  height: 100%;
+  background-image: url(assets/images/bg/bg5.jpg);
+ display: flex;
+ flex-direction: column; 
+}
+
+.text{
+  display: flex;
+  position: relative;
+  top:20%;
+  justify-content: center;
+}
+
+.text > h3{
+  color: white;
+}
+
+.tabs{
+  width: 80vw;
+  height: 60%;
+  position: relative;
+  top: 20%;
+  align-self: center;
+}
+
+
+/* .carousel {
+	margin-top: 2%;
+} */
+
+.carousel-cell > .image {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-cell > .image > img{
+  border-radius: 50%;
+  width: 96%;
+  height: 45%;
+  align-items: center;
+  /* position: relative;
+  top: -15%; */
+}
+.carousel-cell > .testimony > p{
+  color: white;
+  font-size: 20px;
+}
+.carousel-cell > .testimony > span{
+  color: white;
+  font-size: 35px;
+}
+.carousel-cell > .testimony {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.carousel-cell > .testimony-clients {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 12%;
+}
+
+.carousel-cell > .testimony-clients > p{
+  color: white;
+  font-size: 20px;
+}
+.carousel-cell > .testimony-clients > span{
+  color: white;
+  font-size: 35px;
+}
+
+.name{
+  color: white;
+  font-size: 23px !important;
+  text-align: center;
+}
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height:center;
+  content: '';
+  color: white;
+}
+
+.carousel-cell {
+  margin-right: 10px;
+  border-radius: 15px;
+  padding: 10px;
+	margin-right: 2vw;
+  border: 0.3px solid grey;
+  counter-increment: carousel-cell;
+}
+
+
+/* Teams Carousel */
+
+#cell{
+  width: 100%;
+  height: 50vh;
+  border: none;
+  counter-increment: carousel-cell;
+}
+
+@media screen and (min-width:901px) and (max-width:1440px) {
+   .carousel-cell {
+    width: 31%;
+    height: 29vh;
+    display: flex;
+    flex-direction: row;
+   }
+}
+
+@media screen and ( max-width: 900px ) {
+   .carousel-cell {
+     width: 45%;
+     height:40vh;
+     display:flex;
+     flex-direction:row;
+   }
+}
+
+@media screen and ( max-width: 750px ) {
+  .carousel-cell {
+    width: 80%;
+    height:40vh;
+    display:flex;
+    flex-direction:row;
+  }
+}
+
+
+@media screen and ( max-width: 992px ) {
+  #cell {
+    width: 100%;
+    height:50vh;
+    margin-left: 20vw;
+  }
+}
